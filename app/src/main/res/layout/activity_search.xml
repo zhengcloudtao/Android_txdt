@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal"
+        >
+        <EditText
+            android:id="@+id/search"
+            android:layout_width="220dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="10dp"
+            android:hint="搜索地点"
+            android:textSize="14dp"
+            android:inputType="text"
+            android:background="#00ffffff"
+            />
+        <Button
+            android:id="@+id/qx"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="0dp"
+            android:textSize="15dp"
+            android:text="取消"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="600dp"
+        android:layout_marginTop="50dp"
+
+        >
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+</RelativeLayout>
